@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HighlightModule } from 'ngx-highlightjs';
 
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HighlightModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

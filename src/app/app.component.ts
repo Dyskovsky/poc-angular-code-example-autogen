@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'exp-root',
@@ -6,16 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  code = `export class HeroListComponent implements OnInit {
-    heroes: Hero[];
-    selectedHero: Hero;
 
-    constructor(private service: HeroService) { }
+  constructor(private http: HttpClient) {}
 
-    ngOnInit() {
-      this.heroes = this.service.getHeroes();
-    }
+  code$ = this.http.get('/assets/examples/hero-list.component.ts', { responseType: 'text'});
 
-    selectHero(hero: Hero) { this.selectedHero = hero; }
-  }`;
 }

@@ -5,6 +5,6 @@
     ngx-highlight test
   </header>
   <div>
-    <pre><code [highlight]="code"></code></pre>
+    <pre><code [highlight]="code$ | async" [lineNumbers]="'true'"></code></pre>
   </div>
 </div>
