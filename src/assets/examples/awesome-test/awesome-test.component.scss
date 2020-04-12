@@ -1,0 +1,36 @@
+.awesome-test-container {
+  background-color: lightblue;
+  border: 1px solid gray;
+  border-radius: 3px;
+  color: darkslategray;
+  padding: 10px 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: 600px;
+  text-align: justify;
+
+  & > header {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+   .body-title {
+    font-size: 1.5em;
+    color: brown;
+  }
+
+  button {
+    background: transparent;
+    color: brown;
+    border: 1px solid brown;
+    margin: 15px 15px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-size: 1.1em;
+  }
+
+  button:hover {
+    background: brown;
+    color: white;
+    cursor: pointer;
+  }
+}

@@ -2,9 +2,18 @@
 
 <div>
   <header>
-    ngx-highlight test
+    Awesome Test
   </header>
+
+  <ul>
+    <li *ngFor="let file of files">
+      <h5>{{file}}</h5>
+      <pre><code [highlight]="file | getFile | async"></code></pre>
+    </li>
+  </ul>
+
   <div>
-    <pre><code [highlight]="code$ | async" [lineNumbers]="'true'"></code></pre>
+    <h5>Result</h5>
+    <exp-awesome-test></exp-awesome-test>
   </div>
 </div>

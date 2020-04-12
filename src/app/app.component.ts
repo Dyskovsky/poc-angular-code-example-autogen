@@ -10,6 +10,13 @@ export class AppComponent {
 
   constructor(private http: HttpClient) {}
 
-  code$ = this.http.get('/assets/examples/hero-list.component.ts', { responseType: 'text'});
 
+
+  files = [
+    'awesome-test.component.html',
+    'awesome-test.component.scss',
+    'awesome-test.component.spec.ts',
+    'awesome-test.component.ts',
+    'awesome-test.module.ts',
+  ];
 }
